@@ -35,7 +35,8 @@ class NotebookLoader(object):
         """import a notebook as a module"""
         path = find_notebook(fullname, self.path)
         
-        print ("importing Jupyter notebook from %s" % path)
+        print('------------------------------------------------------------------------------------------------------')
+        print ("importing Ipython notebook %s" % path)
                                        
         # load the notebook object
         with io.open(path, 'r', encoding='utf-8') as f:
